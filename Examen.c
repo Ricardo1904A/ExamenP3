@@ -49,3 +49,23 @@ void C_estudiante()
 
     fclose(archivo);
 }
+// iniciamos ingresando los estudiantes con las respectivas notas que nos daba el problema del programa a resolver
+int main()
+// ingresamos manualmente cada estudiante haciendo uso de la estructura antes creada y creando una variable para despues usar en la funcion de cargar archivos para que se escriba en el archivo estudianetes
+{
+    Estudiante estudiante1 = {"Carlos Mata", "Software", 6.00, 7.00, 8.00};
+    Estudiante estudiante2 = {"Luis Miguel", "Contabilidad", 5.00, 6.00, 7.00};
+    Estudiante estudiante3 = {"Ana Belén", "Ciberseguridad", 10.00, 9.00, 10.00};
+    Estudiante estudiante4 = {"Maria Victoria", "Software", 9.00, 9.00, 9.00};
+    Estudiante estudiante5 = {"Juan Pérez", "Administración", 8.50, 8.00, 9.00};
+    // despues de ingresar los datos por teclado hacemos que carge en la funcion antes creada para que se suba los datos al archivo
+    G_estudiante(estudiante1, 1);
+    G_estudiante(estudiante2, 2);
+    G_estudiante(estudiante3, 3);
+    G_estudiante(estudiante4, 4);
+    G_estudiante(estudiante5, 5);
+
+    C_estudiante();
+
+    return 0;
+}
